@@ -1,0 +1,6 @@
+[data-theme="dark"]  section.section-one {
+    background: #252522;
+}
+[data-theme="dark"] p,[data-theme="dark"] h1.brown {
+    color: #fff3d9;
+}

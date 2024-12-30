@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light dark mode</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/darkmode.css">
+
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <section class="section-one">
+        <div class="toggle-switch">
+            <input type="checkbox" id="theme-toggle" />
+            <label for="theme-toggle"></label>
+        </div>
+        <div class="container">
+            <div class="container__txt center">
+                <p>Lorem Ipsum Sit</p>
+                <h1 class="brown">Responsive layouts don't have to be struggle</h1>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-color: #ada7a7;"></div>
+                        <div class="swiper-slide" style="background-color: #d37506;"></div>
+                        <div class="swiper-slide" style="background-color: #fdb750;"></div>
+                        <div class="swiper-slide" style="background-color: #fc2e20;"></div>
+                        <div class="swiper-slide" style="background-color: #fd7f20;"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+
+</html>
